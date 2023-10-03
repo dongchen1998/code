@@ -1,4 +1,4 @@
-# Some script and file in TIB
+# Some script and files in TIB
 - lab
 - mtd
 - interest
