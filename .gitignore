@@ -1,3 +1,4 @@
+# mtd
 mtd/RNA-seq/
 
 mtd/code/obtaining-experimental-info/
@@ -8,3 +9,10 @@ mtd/tools/blast/bin/
 mtd/tools/blast/db_prot/
 mtd/tools/blast/doc/
 mtd/tools/blast/proteins/
+
+
+# lab
+lab/JHK/gpgi/
+
+
+tool/
