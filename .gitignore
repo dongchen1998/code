@@ -1,19 +1,13 @@
 # mtd
-mtd/RNA-seq/
+
 
 mtd/code/obtaining-experimental-info/
+mtd/code/Vsualization/
 
+mtd/RNA-seq/
 mtd/search/
-
-mtd/tools/blast/bin/
-mtd/tools/blast/db_prot/
-mtd/tools/blast/doc/
-mtd/tools/blast/proteins/
+mtd/tools/
 
 
 # lab
 lab/JHK/gpgi/
-
-
-tool/
-mtd/tools/blast/ncbi-blast-2.13.0+-x64-linux.tar.gz
