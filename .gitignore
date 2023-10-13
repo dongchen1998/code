@@ -1,0 +1,14 @@
+# Ignore all .DS_Store files
+.DS_Store
+
+# mtd
+mtd/code/obtaining-experimental-info/
+mtd/code/Vsualization/
+
+mtd/RNA-seq/
+mtd/search/
+mtd/tools/
+
+
+# lab
+lab/
