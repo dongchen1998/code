@@ -2,12 +2,24 @@
 .DS_Store
 
 # mtd
-mtd/code/obtaining-experimental-info/
-mtd/code/Vsualization/
+mtd/code/obtaining-experimental-info/*.csv
+mtd/code/obtaining-experimental-info/*.txt
+mtd/code/obtaining-experimental-info/*.xlsx
+mtd/code/obtaining-experimental-info/An/
+mtd/code/obtaining-experimental-info/Mt/
+mtd/code/obtaining-experimental-info/Nc/
+mtd/code/obtaining-experimental-info/Tr/
+
 
 mtd/RNA-seq/
+
 mtd/search/
-mtd/tools/
+
+mtd/tools/blast/
+mtd/tools/geo-fetch/
+mtd/tools/modulome-workflow/
+mtd/tools/parallel/
+mtd/tools/MSA/kalign/
 
 
 # lab
