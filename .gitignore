@@ -23,6 +23,16 @@ mtd/tools/MSA/kalign/
 
 
 # lab
-lab/
+lab/JHK
+lab/LDD
+lab/Tian
+lab/YM/*.csv
+lab/YM/*.xlsx
+lab/YM/*.txt
+lab/YM/*.tsv
+lab/YM/PCA_files/
+lab/YM/Mt/
+lab/YM/Nc/
+lab/YM/Saccharomyces_cerevisiae_S288C/
 
 study/AutoGen
