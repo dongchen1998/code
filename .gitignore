@@ -15,11 +15,7 @@ mtd/RNA-seq/
 
 mtd/search/
 
-mtd/tools/blast/
-mtd/tools/geo-fetch/
-mtd/tools/modulome-workflow/
-mtd/tools/parallel/
-mtd/tools/MSA/kalign/
+mtd/tools/
 
 
 # lab
