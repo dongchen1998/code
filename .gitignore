@@ -1,0 +1,33 @@
+# Ignore all .DS_Store files
+.DS_Store
+
+# mtd
+mtd/code/obtaining-experimental-info/*.csv
+mtd/code/obtaining-experimental-info/*.txt
+mtd/code/obtaining-experimental-info/*.xlsx
+mtd/code/obtaining-experimental-info/An/
+mtd/code/obtaining-experimental-info/Mt/
+mtd/code/obtaining-experimental-info/Nc/
+mtd/code/obtaining-experimental-info/Tr/
+
+
+mtd/code/Vsualization/Reference/
+
+mtd/code/R/
+
+
+mtd/RNA-seq/
+
+mtd/search/
+
+mtd/tools/
+
+
+# lab
+lab/JHK
+lab/LDD
+lab/Tian
+lab/YM/
+
+study/AutoGen
+
