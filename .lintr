@@ -1,1 +1,4 @@
 linters: with_defaults(line_length_linter = NULL)
+linters:
+  line_length_linter: NULL
+  indentation_linter: spaces(4)
