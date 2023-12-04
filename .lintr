@@ -1,3 +1,4 @@
 linters:
   line_length_linter: NULL
-  # Any other linters and their settings...
+  
+  
