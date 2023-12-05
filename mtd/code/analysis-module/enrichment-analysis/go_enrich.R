@@ -26,7 +26,7 @@ if (!file.exists(opt$input)) {
   stop("输入文件不存在: ", opt$input)
 }
 
-# 背景文件
+# 背景文件，需要师哥你修改一下路径
 go2name <- read.delim('/Users/dongjiacheng/Desktop/coder/mtd/code/analysis-module/enrichment-analysis/background-file/go2name.txt', stringsAsFactors=FALSE)
 if (opt$species == "Aspergillus niger") {
   go2gene <- read.delim('/Users/dongjiacheng/Desktop/coder/mtd/code/analysis-module/enrichment-analysis/background-file/go_gene_an.txt', stringsAsFactors=FALSE)
