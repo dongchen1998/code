@@ -27,15 +27,15 @@ if (!file.exists(opt$input)) {
 }
 
 # 背景文件
-go2name <- read.delim('/Users/dongjiacheng/Desktop/code/mtd/code/analysis-module/enrich/background-file/go2name.txt', stringsAsFactors=FALSE)
+go2name <- read.delim('/Users/dongjiacheng/Desktop/code/mtd/coder/analysis-module/enrich/background-file/go2name.txt', stringsAsFactors=FALSE)
 if (opt$species == "Aspergillus niger") {
-  go2gene <- read.delim('/Users/dongjiacheng/Desktop/code/mtd/code/analysis-module/enrich/background-file/go_gene_an.txt', stringsAsFactors=FALSE)
+  go2gene <- read.delim('/Users/dongjiacheng/Desktop/code/mtd/coder/analysis-module/enrich/background-file/go_gene_an.txt', stringsAsFactors=FALSE)
 } else if (opt$species == "Myceliophthora thermophila") {
-  go2gene <- read.delim('/Users/dongjiacheng/Desktop/code/mtd/code/analysis-module/enrich/background-file/go_gene_mt.txt', stringsAsFactors=FALSE)
+  go2gene <- read.delim('/Users/dongjiacheng/Desktop/code/mtd/coder/analysis-module/enrich/background-file/go_gene_mt.txt', stringsAsFactors=FALSE)
 } else if (opt$species == "Trichoderma reesei") {
-  go2gene <- read.delim('/Users/dongjiacheng/Desktop/code/mtd/code/analysis-module/enrich/background-file/go_gene_tr.txt', stringsAsFactors=FALSE)
+  go2gene <- read.delim('/Users/dongjiacheng/Desktop/code/mtd/coder/analysis-module/enrich/background-file/go_gene_tr.txt', stringsAsFactors=FALSE)
 } else if (opt$species == "Neurospora crassa") {
-  go2gene <- read.delim('/Users/dongjiacheng/Desktop/code/mtd/code/analysis-module/enrich/background-file/go_gene_nc.txt', stringsAsFactors=FALSE)
+  go2gene <- read.delim('/Users/dongjiacheng/Desktop/code/mtd/coder/analysis-module/enrich/background-file/go_gene_nc.txt', stringsAsFactors=FALSE)
 }
 
 # 读取gene list
