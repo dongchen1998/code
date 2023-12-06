@@ -3,11 +3,9 @@ library(optparse)
 library(clusterProfiler)
 library(dplyr)
 
+
 ## 测试
-#  Rscript go_enrich.R -s "Myceliophthora thermophila" -p 0.05 -i "input-file/gene_list.txt" -o "output-file/enrich_kegg.tsv"
-#  Rscript go_enrich.R -s "Aspergillus niger" -p 0.05 -i "input-file/gene_list.txt" -o "output-file/enrich_kegg.tsv"
-#  Rscript go_enrich.R -s "Trichoderma reesei" -p 0.05 -i "input-file/gene_list.txt" -o "output-file/enrich_kegg.tsv"
-#  Rscript go_enrich.R -s "Neurospora crassa" -p 0.05 -i "input-file/gene_list.txt" -o "output-file/enrich_kegg.tsv"
+#  Rscript go_enrich.R -s 'Myceliophthora thermophila' -p 0.05 -i 'input-file/gene_list.txt' -o 'output-file/enrich_kegg.tsv'
 
 # 设置命令行选项
 option_list <- list(
