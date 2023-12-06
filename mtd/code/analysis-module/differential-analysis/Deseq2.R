@@ -25,6 +25,7 @@ if (!file.exists(opt$input)) {
 
 # 读取基因表达谱
 count_df <- read.csv(file = opt$input, header = TRUE, row.names = 1)
+rownames(count_df) <- gsub("-", ".", rownames(count_df))
 
 # 过滤掉垃圾基因
 count_df <- count_df[rowSums(count_df) > 10 & apply(count_df,1,function(x){ all(x > 0) }),]
