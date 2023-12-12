@@ -5,7 +5,7 @@ library(plotly)
 library(optparse)
 
 ## 测试
-# Rscript PCA.R -c 'input-file/expression_matrix.csv' -s 'input-file/sample_info.csv' -o 'output-file/pca.png' -j 'output-file/pca.json'
+# Rscript PCA.R -c 'input_file/expression_matrix.csv' -s 'input_file/sample_info.csv' -o 'output_file/pca.png' -j 'output_file/pca.json'
 
 
 pdf(file = NULL)

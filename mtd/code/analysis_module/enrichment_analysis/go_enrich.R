@@ -5,7 +5,7 @@ library(dplyr)
 
 
 ## 测试
-#  Rscript go_enrich.R -s 'Myceliophthora thermophila' -p 0.05 -i 'input-file/gene_list.txt' -o 'output-file/enrich_kegg.tsv'
+#  Rscript go_enrich.R -s 'Myceliophthora thermophila' -p 0.05 -i 'input_file/gene_list.txt' -o 'output_file/enrich_kegg.tsv'
 
 # 设置命令行选项
 option_list <- list(
@@ -25,15 +25,15 @@ if (!file.exists(opt$input)) {
 }
 
 # 背景文件，需要师哥你修改一下路径
-go2name <- read.delim('/Users/dongjiacheng/Desktop/coder/mtd/code/analysis-module/enrichment-analysis/background-file/go2name.txt', stringsAsFactors=FALSE)
+go2name <- read.delim('/Users/dongjiacheng/Desktop/coder/mtd/code/analysis_module/enrichment_analysis/background_file/go2name.txt', stringsAsFactors=FALSE)
 if (opt$species == "Aspergillus niger") {
-  go2gene <- read.delim('/Users/dongjiacheng/Desktop/coder/mtd/code/analysis-module/enrichment-analysis/background-file/go_gene_an.txt', stringsAsFactors=FALSE)
+  go2gene <- read.delim('/Users/dongjiacheng/Desktop/coder/mtd/code/analysis_module/enrichment_analysis/background_file/go_gene_an.txt', stringsAsFactors=FALSE)
 } else if (opt$species == "Myceliophthora thermophila") {
-  go2gene <- read.delim('/Users/dongjiacheng/Desktop/coder/mtd/code/analysis-module/enrichment-analysis/background-file/go_gene_mt.txt', stringsAsFactors=FALSE)
+  go2gene <- read.delim('/Users/dongjiacheng/Desktop/coder/mtd/code/analysis_module/enrichment_analysis/background_file/go_gene_mt.txt', stringsAsFactors=FALSE)
 } else if (opt$species == "Trichoderma reesei") {
-  go2gene <- read.delim('/Users/dongjiacheng/Desktop/coder/mtd/code/analysis-module/enrichment-analysis/background-file/go_gene_tr.txt', stringsAsFactors=FALSE)
+  go2gene <- read.delim('/Users/dongjiacheng/Desktop/coder/mtd/code/analysis_module/enrichment_analysis/background_file/go_gene_tr.txt', stringsAsFactors=FALSE)
 } else if (opt$species == "Neurospora crassa") {
-  go2gene <- read.delim('/Users/dongjiacheng/Desktop/coder/mtd/code/analysis-module/enrichment-analysis/background-file/go_gene_nc.txt', stringsAsFactors=FALSE)
+  go2gene <- read.delim('/Users/dongjiacheng/Desktop/coder/mtd/code/analysis_module/enrichment_analysis/background_file/go_gene_nc.txt', stringsAsFactors=FALSE)
 }
 
 # 读取gene list

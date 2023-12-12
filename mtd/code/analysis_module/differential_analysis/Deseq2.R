@@ -5,7 +5,7 @@ library(plotly)
 library(optparse)
 
 ## 测试
-# Rscript Deseq2.R -i 'input-file/expression_matrix_deseq2.csv' -o 'output-file/deseq2.tsv' -n 3
+# Rscript Deseq2.R -i 'input_file/expression_matrix_deseq2.csv' -o 'output_file/deseq2.tsv' -n 3
 
 # 定义命令行参数
 option_list <- list(

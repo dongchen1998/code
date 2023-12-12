@@ -30,17 +30,17 @@ if (!file.exists(opt$input)) {
 
 # 根据输入的菌种，读取对应的kegg文件, 需要师哥你修改一下路径
 if (opt$species == "Aspergillus niger") {
-  ko2name <- read.delim("/Users/dongjiacheng/Desktop/coder/mtd/code/analysis-module/enrichment-analysis/background-file/kegg_name_an.txt", stringsAsFactors = FALSE)
-  ko2gene <- read.delim("/Users/dongjiacheng/Desktop/coder/mtd/code/analysis-module/enrichment-analysis/background-file/kegg_gene_an.txt", stringsAsFactors = FALSE)
+  ko2name <- read.delim("/Users/dongjiacheng/Desktop/coder/mtd/code/analysis_module/enrichment_analysis/background_file/kegg_name_an.txt", stringsAsFactors = FALSE)
+  ko2gene <- read.delim("/Users/dongjiacheng/Desktop/coder/mtd/code/analysis_module/enrichment_analysis/background_file/kegg_gene_an.txt", stringsAsFactors = FALSE)
 } else if (opt$species == "Myceliophthora thermophila") {
-  ko2name <- read.delim("/Users/dongjiacheng/Desktop/coder/mtd/code/analysis-module/enrichment-analysis/background-file/kegg_name_mt.txt", stringsAsFactors = FALSE)
-  ko2gene <- read.delim("//Users/dongjiacheng/Desktop/coder/mtd/code/analysis-module/enrichment-analysis/background-file/kegg_gene_mt.txt", stringsAsFactors = FALSE)
+  ko2name <- read.delim("/Users/dongjiacheng/Desktop/coder/mtd/code/analysis_module/enrichment_analysis/background_file/kegg_name_mt.txt", stringsAsFactors = FALSE)
+  ko2gene <- read.delim("//Users/dongjiacheng/Desktop/coder/mtd/code/analysis_module/enrichment_analysis/background_file/kegg_gene_mt.txt", stringsAsFactors = FALSE)
 } else if (opt$species == "Trichoderma reesei") {
-  ko2name <- read.delim("/Users/dongjiacheng/Desktop/coder/mtd/code/analysis-module/enrichment-analysis/background-file/kegg_name_tr.txt", stringsAsFactors = FALSE)
-  ko2gene <- read.delim("/Users/dongjiacheng/Desktop/coder/mtd/code/analysis-module/enrichment-analysis/background-file/kegg_gene_tr.txt", stringsAsFactors = FALSE)
+  ko2name <- read.delim("/Users/dongjiacheng/Desktop/coder/mtd/code/analysis_module/enrichment_analysis/background_file/kegg_name_tr.txt", stringsAsFactors = FALSE)
+  ko2gene <- read.delim("/Users/dongjiacheng/Desktop/coder/mtd/code/analysis_module/enrichment_analysis/background_file/kegg_gene_tr.txt", stringsAsFactors = FALSE)
 } else if (opt$species == "Neurospora crassa") {
-  ko2name <- read.delim("/Users/dongjiacheng/Desktop/coder/mtd/code/analysis-module/enrichment-analysis/background-file/kegg_name_nc.txt", stringsAsFactors = FALSE)
-  ko2gene <- read.delim("/Users/dongjiacheng/Desktop/coder/mtd/code/analysis-module/enrichment-analysis/background-file/kegg_gene_nc.txt", stringsAsFactors = FALSE)
+  ko2name <- read.delim("/Users/dongjiacheng/Desktop/coder/mtd/code/analysis_module/enrichment_analysis/background_file/kegg_name_nc.txt", stringsAsFactors = FALSE)
+  ko2gene <- read.delim("/Users/dongjiacheng/Desktop/coder/mtd/code/analysis_module/enrichment_analysis/background_file/kegg_gene_nc.txt", stringsAsFactors = FALSE)
 }
 
 # 读取gene list
