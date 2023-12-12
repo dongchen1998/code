@@ -2,18 +2,18 @@
 .DS_Store
 
 # mtd
-mtd/code/obtaining-experimental-info/*.csv
-mtd/code/obtaining-experimental-info/*.txt
-mtd/code/obtaining-experimental-info/*.xlsx
-mtd/code/obtaining-experimental-info/An/
-mtd/code/obtaining-experimental-info/Mt/
-mtd/code/obtaining-experimental-info/Nc/
-mtd/code/obtaining-experimental-info/Tr/
+mtd/code/workstation/obtaining-experimental-info/*.csv
+mtd/code/workstation/obtaining-experimental-info/*.txt
+mtd/code/workstation/obtaining-experimental-info/*.xlsx
+mtd/code/workstation/obtaining-experimental-info/An/
+mtd/code/workstation/obtaining-experimental-info/Mt/
+mtd/code/workstation/obtaining-experimental-info/Nc/
+mtd/code/workstation/obtaining-experimental-info/Tr/
 
 
-mtd/code/Vsualization/Reference/
+mtd/code/workstation/Reference/
 
-mtd/code/R/
+mtd/code/workstation/R/
 
 
 mtd/RNA-seq/
