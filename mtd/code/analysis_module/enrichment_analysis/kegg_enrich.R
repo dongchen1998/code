@@ -28,7 +28,7 @@ if (!file.exists(opt$input)) {
   stop("输入文件不存在: ", opt$input)
 }
 
-# 根据输入的菌种，读取对应的kegg文件, 需要师哥你修改一下路径
+# 背景文件，需要师哥你修改一下路径
 if (opt$species == "Aspergillus niger") {
   ko2name <- read.delim("/Users/dongjiacheng/Desktop/coder/mtd/code/analysis_module/enrichment_analysis/background_file/kegg_name_an.txt", stringsAsFactors = FALSE)
   ko2gene <- read.delim("/Users/dongjiacheng/Desktop/coder/mtd/code/analysis_module/enrichment_analysis/background_file/kegg_gene_an.txt", stringsAsFactors = FALSE)
