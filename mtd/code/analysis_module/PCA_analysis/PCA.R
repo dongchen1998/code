@@ -14,6 +14,7 @@ option_list <- list(
   make_option(c("-c", "--input_count"), type = "character", default = "", help = "基因表达谱(Count)"), 
   make_option(c("-s", "--input_sample"), type = "character", default = "", help = "样本分组信息"),
   make_option(c("-o", "--output_png"), type = "character", default = "", help = "输出的PCA静态图"),
+  # make_option(c("-d", "--output_3d_png"), type = "character", default = "", help = "输出的PCA交互式图的高分辨图片"),
   make_option(c("-j", "--output_json"), type = "character", default = "", help = "输出的PCA交互式图的json文件")  
 )
 
@@ -98,9 +99,11 @@ fig_3d <- plot_ly(
     template = "simple_white"
   )
 
+# 保存为png，scale设置为4
+# kaleido(fig_3d, file = opt$output_3d_png, scale = 4)
+
 # 将Plotly图转换为JSON
 json_data <- plotly::plotly_json(fig_3d, jsonedit = FALSE) 
-
 
 # 将JSON数据写入文件
 json_file_path <- opt$output_json
