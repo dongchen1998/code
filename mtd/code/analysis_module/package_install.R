@@ -1,5 +1,5 @@
 
-# 运行此脚本，安装所需的R包： Rscript package_install.R
+# 在终端中运行此脚本，安装所需的R包： Rscript package_install.R
 
 if (!require("BiocManager", quietly = TRUE)) 
     install.packages("BiocManager")
