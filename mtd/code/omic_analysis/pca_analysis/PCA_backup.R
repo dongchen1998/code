@@ -3,10 +3,9 @@ library(DESeq2)
 library(ggplot2)
 library(plotly)
 library(optparse)
-library(htmlwidgets)
 
 ## 测试
-# Rscript PCA_2.R -c 'input_file/expression_matrix.csv' -s 'input_file/sample_info.csv' -o 'output_file/pca.png' -j 'output_file/pca.json' -t 'output_file/pca.html'
+# Rscript PCA.R -c 'input_file/expression_matrix.csv' -s 'input_file/sample_info.csv' -o 'output_file/pca.png' -j 'output_file/pca.json'
 
 
 pdf(file = NULL)
@@ -15,8 +14,8 @@ option_list <- list(
   make_option(c("-c", "--input_count"), type = "character", default = "", help = "基因表达谱(Count)"), 
   make_option(c("-s", "--input_sample"), type = "character", default = "", help = "样本分组信息"),
   make_option(c("-o", "--output_png"), type = "character", default = "", help = "输出的PCA静态图"),
-  make_option(c("-j", "--output_json"), type = "character", default = "", help = "输出的PCA交互式图的json文件"),
-  make_option(c("-t", "--output_html"), type = "character", default = "", help = "输出的PCA交互式图的html文件")
+  # make_option(c("-d", "--output_3d_png"), type = "character", default = "", help = "输出的PCA交互式图的高分辨图片"),
+  make_option(c("-j", "--output_json"), type = "character", default = "", help = "输出的PCA交互式图的json文件")  
 )
 
 # 解析命令行参数
@@ -100,14 +99,12 @@ fig_3d <- plot_ly(
     template = "simple_white"
   )
 
+# 保存为png，scale设置为4
+# kaleido(fig_3d, file = opt$output_3d_png, scale = 4)
+
 # 将Plotly图转换为JSON
 json_data <- plotly::plotly_json(fig_3d, jsonedit = FALSE) 
 
 # 将JSON数据写入文件
 json_file_path <- opt$output_json
 write(json_data, file = json_file_path)
-
-
-# selfcontained = TRUE：当设置为 TRUE 时，所有必要的资源（如 JavaScript 和 CSS 文件）都会被嵌入到单个 HTML 文件中。这意味着您可以将这个文件移动到任何地方，或者独立地发送给其他人，而不用担心丢失任何功能。文件可能会变得相对较大，因为它包含了所有必要的资源。
-# selfcontained = FALSE：当设置为 FALSE 时，生成的 HTML 文件将不会包含所有的资源。相反，它将链接到这些资源。这使得文件体积更小，但是为了保证图表能够正确显示，您需要确保这些外部资源可用。如果您将这个 HTML 文件移动到没有相应资源的新位置，或者在没有网络连接的情况下尝试查看它，图表可能无法正确显示。
-saveWidget(fig_3d, file = opt$output_html, selfcontained = TRUE)
